@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leon Berkemeier</title>
+    <style>
+        /* .all{
+            height: 500px;
+            width: 500px;
+            background: rgb(0, 128, 0,.2);
+            background-image: url('bg.jpg');
+        } */
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .background-image{
+            height: 100vh;
+            /* width: 100px; */
+            background-image: url('./bg3.jpg');
+            background-size: cover;
+            opacity: .95;
+        }
+        .headder{
+            height: 90px;
+            width: 100vw;
+            background: rgb(54,54,54,.6);
+            display: flex;
+            justify-content: space-between;
+        }
+        .name{
+            margin: 20px;
+            font-size: 30px;
+            margin-left: 50px;
+            width: 30vw;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .navigation{
+            display: flex;
+        }
+        .ul{
+            width: 30vw;
+            justify-content: space-evenly;
+            display: flex;
+            right: 20px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left:0px;
+            margin-right: 60px;
+        }
+        .list{
+            list-style: none;
+            margin-left: 60px;
+            margin-right: 60px;
+            text-decoration: underline;
+            color: white;
+        }
+        .list-item{
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: 500;
+            color: white;
+        }
+        .dropbtn {
+
+        /* color: white; */
+        /* padding: 16px; */
+        font-size: 16px;
+        text-decoration: underline;
+        border: none;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: rgb(34,34,34,.5);
+        min-width: 74px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 10px 10px;
+        text-decoration: none;
+        display: block;
+
+        }
+
+        .dropdown-content a:hover {background-color: rgb(34,34,34,.5);}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        /* .dropdown:hover .dropbtn {background-color: rgb(34,34,34,.5);} */
+
+        .connect{
+            margin-top: 20px;
+            margin-right: 50px;
+            margin-left: 100px;
+            /* background: rgb(34,34,34,.5);
+        */  
+        }
+        .connecter{
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            cursor: pointer;
+            color: white;
+            text-decoration: underline;
+            background: rgb(34,34,34,.2);
+             }
+        .container{
+            display: flex;
+            height: 80vh;
+            width: 100vw;
+            /* background: blue; */
+            justify-content: center;
+            text-align: center;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            
+            height: 100%;
+            width: 80%;
+            /* background: green; */
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .center-vertically{
+            display: flex;
+            height: 450px;
+            width: 100%;
+            /* background: orange; */
+            justify-content: center;
+            margin-top: 30px;
+
+        }
+        .main-left{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            margin: 20px;
+            background-image: url('pb.jpg');
+            background-size: cover;
+            cursor: pointer;
+            
+        }
+        .main-left:hover{
+            animation: animateLiquid 3s linear infinite;
+            animation-play-state: running;
+        }
+        @keyframes animateLiquid{
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform: rotate(-10deg);
+            }
+            50%{
+                transform: rotate(0deg);
+            }
+            75%{
+                transform: rotate(10deg);
+            }
+            100%{
+                transform: rotate(0deg);
+            }
+        }
+        .main-right{
+            display: flex;
+            height: 300px;
+            width: 400px;
+            background: rgb(222, 222, 222,.5);
+            margin: 20px;
+            border-radius: 28px;
+            text-align: center;
+            justify-content: center;
+        }
+        .main-right-text{
+            margin-top: 5px;
+            height: 290px;
+            width: 390px;
+            background: rgb(230,230,230,.6);
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 90px;
+            width: 80vw;
+            background: rgba(222, 222, 222, 0.6);
+            border-radius: 30px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        .dwnldcv{
+            height: 40px;
+            width: 100px;
+            background: rgb(159, 159, 166);
+            border-radius: 20px;
+            opacity: 1;
+            margin: 10px;
+            outline: 2px outset rgb(66, 66, 66);
+            cursor: pointer;
+        }
+        .cntct{
+            height: 40px;
+            width: 100px;
+            background: rgb(58, 61, 58);
+            border-radius: 20px;
+            opacity: 1;
+            margin: 10px;
+            outline: 2px outset rgb(66, 67, 66);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image">
+        <div class="headder">
+            <div class="name">
+                <p class="site-title">leon berkemeier</p>
+                <!-- <small>Eins | Zwei | Drei</small> -->
+            </div>
+            <div class="navigation">
+                <ul class="ul">
+                    
+                    <li class="list">
+                        <h2 class="list-item">experience</h2>
+                        
+                    </li>
+                    <li class="list">
+                        <div class="dropdown">
+                            <div class="dropbtn">
+                                <h1 class="list-item">projects</h1>
+                            </div>
+                                <div class="dropdown-content">
+                                    <a href="#">Cards</a>
+                                    <a href="#">List</a>                              
+                                </div>
+                          </div>
+                    </li>
+                    
+                    <li class="list">
+                        <h1 class="list-item">photography</h1>
+                    </li>
+                </ul>
+                <div class="connect">
+                    <a class="connecter" href="">
+                        <button class="connecter">
+                            Let's Connect            
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main">
+            <div class="container">
+                <div class="center">
+                    <div class="center-vertically">
+                        <div class="main-left">
+                            <!-- <h1>picture</h1> -->
+                        </div>
+            
+                        <div class="main-right">
+                            <div class="main-right-text">
+                                <h2>
+                                    Hi, 
+                                </h2>
+                                
+                                <h1>
+                                    I'm Leon
+                                </h1>
+                                
+                                <h3>and this is MY website</h3>
+                                <div class="buttons">
+                                    <a href="">
+                                        <button class="dwnldcv">
+                                            Download CV
+                                        </button>
+                                    </a>
+                                    <br>
+                                    <a href="">
+                                        <button class="cntct">
+                                            Contact Me
+                                        </button>                                       
+                                    </a>
+                                </div>
+                            </div>                            
+                        </div>                        
+                    </div>
+                        <div class="about">
+                            <h1 style="font-size: 15px;">about ME:</h1>
+                            <h3 style="font-size: 12px;" >
+                                I am currently studying chemistry and chemical engineering and I really like to write some code and take some pictures im my freetime. If you are interested in pictures feel free to check me out on instagram or VSCO.
+                            </h3>
+                            <h3  style="font-size: 12px;">
+                                If you want to contact me for whatever other reason feel free to write me an Email!
+                            </h3>
+                        </div>
+                </div>                
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leon berkemeier</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .dropbtn {
+
+        background-color: rgb(35, 193, 35,.8);
+        /* color: white; */
+        /* padding: 16px; */
+        font-size: 16px;
+        text-decoration: underline;
+        border: none;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+        .all{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: column;
+            text-align: center;
+            height: 100vh;
+            /* width: 100px; */
+            background-image: url('./bg.jpg');
+            background-size: cover;
+        }
+        .headder{
+            display: flex;
+            height: 100px;
+            width: 100%;
+            /* background: rgb(35, 193, 35,.9); */
+            top: 1px;
+            left: 0px;
+            top: 0px;
+            justify-content: space-between;
+            color: white;
+        }
+        .boddy{
+            /* background: orange; */
+            width: 100%;
+            height: 550px;
+            
+        }
+        footer{
+            text-align: center;
+            padding: 3px;
+            /* background-color: DarkSalmon; */
+            color: white;
+            margin-bottom: 10px;
+        }
+        .ul{
+            width: 400px;
+            justify-content: space-evenly;
+            display: flex;
+            right: 20px;
+            text-align: center;
+        }
+        .list{
+            list-style: none;
+            text-decoration: underline;
+        }
+        .navigation{
+            width: 75%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .list{
+            font-size: 20px;
+            margin: 15px;
+        }
+        .name{
+            text-align: center;
+        }
+        .site-title{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        /* .connect{
+            font-size: 25px;
+            height: 90%;
+            width: 100%;
+            
+            text-align: center;
+            margin: 10px;
+        } */
+        .connecter{
+            font-size: 25px;
+            width: 180px;
+            height: 70px;
+            text-align: center;
+            background: rgb(18, 211, 18,.2);
+            cursor: pointer;
+            margin-top: 15px;
+            outline: 2px outset white;
+        }
+        .boddy{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: flex-start;
+            /* background: orange; */
+            width: 100%;
+            height: 550px;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .body-left{
+            height: 300px;
+            width: 300px;
+            background: yellow;
+            border-radius: 50%;
+            margin: 20px;
+            margin-top: 40px;
+        }
+        .body-right{
+            height: 300px;
+            width: 300px;
+            background: greenyellow;
+            margin-top: 60px;
+            margin: 20px;
+            margin-top: 40px;
+            margin-left: 60px;
+        }
+        .about{
+            height: 200px;
+            width: 800px;
+            /* background: purple; */
+            margin-left: 50px;
+        }
+        .all1{
+            background: rgb(45, 45, 45,.4);
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="all1">
+
+        <div class="headder">
+            <div class="name">
+                <p class="site-title">leon berkemeier</p>
+                <small>Eins | Zwei | Drei</small>
+            </div>
+            <div class="navigation">
+                <ul class="ul">
+                    
+                    <li class="list">
+                        experience
+                    </li>
+                    <li class="list">
+                        <div class="dropdown">
+                            <button class="dropbtn">projects</button>
+                            <div class="dropdown-content">
+                              <a href="#">Cards</a>
+                              <a href="#">List</a>
+                              
+                            </div>
+                          </div>
+                    </li>
+                    
+                    <li class="list">
+                        photography
+                    </li>
+                </ul>
+                <div class="connect">
+                    <a class="connecter" href="">
+                        <button class="connecter">
+                            Let's Connect            
+                        </button>
+                    </a>
+                    
+                </div>
+            </div>
+            
+
+        </div>
+
+        <div class="boddy">
+            <div class="container">
+                <div class="body-left">
+                    picture
+                </div>
+    
+                <div class="body-right">
+                    <h3>hi, I'm</h3>
+                    <h1>leon berkemeier</h1>
+                    <h2>role1 | role2 | role3</h2>
+                    <a class="curiculum" href="">
+                        <button class="curiculum">
+                            download CV
+                        </button>
+                    </a>
+                    <a class="contact-info" href="">
+                        <button class="contact-info">
+                            contact info
+                        </button>
+                    </a>
+    
+                </div>
+            </div>
+            
+            
+            <div class="about">
+                <h2>about me</h2>
+                <span>this will be a text about my shit man all the stuff will get in this</span>
+
+            </div>
+    
+        </div>
+
+        <footer>
+            <p>Author: Hege Refsnes<br>
+            <a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
+    </div>
+    </div>
+   
+    
+</body>
+</html>
